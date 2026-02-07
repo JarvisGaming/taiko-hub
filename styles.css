@@ -223,15 +223,17 @@ img {
 
 .card {
     border-left: 6px solid var(--accent-color);
+    height: fit-content;
 
     display: grid;
-    grid-template-rows: max-content max-content 30px;
+    grid-template-rows: max-content max-content 40px;
 }
 
 .card > .buttons {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    padding-top: 10px;
 }
 
 #announcements > ul {
@@ -261,7 +263,7 @@ img {
 
 #trending .user {
     display: grid;
-    grid-template: 1fr 1fr / var(--small-profile-pic-size) auto;
+    grid-template: repeat(2, max-content) / var(--small-profile-pic-size) auto;
 }
 
 #trending .user img {
