@@ -122,12 +122,13 @@ h3 {
 
 #user-display {
     display: grid;
-    grid-template: 1fr 1fr / var(--large-profile-pic-size) max-content;
+    grid-template: 1fr 1fr / var(--large-profile-pic-size) 1fr;
     font-weight: bold;
 }
 
 #user-display > .profile-pic {
     grid-row: 1 / -1;
+    align-self: center;
 }
 
 #user-display > .text {
